@@ -44,7 +44,7 @@ MI checks the correctness of the PC and changes the status of the order.
 public function up()
 {
     $this->insert(
-        \app\models\PaymentType::tableName(),
+        \app\modules\shop\models\PaymentType::tableName(),
         [
             'name' => 'Platron',
             'class' => 'app\components\payment\PlatronPayment',
